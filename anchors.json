@@ -1,0 +1,33 @@
+{
+  "schema": "huicheng-anchor-ledger/v1",
+  "updated_at": "2026-11-22T11:20:45+08:00",
+  "entries": [
+    {
+      "version": "3.2.6",
+      "package": "小天机盲派（盲派定层次技能包）",
+      "source_repo": "Liu5201988/huicheng-skillguard",
+      "source_branch": "mangpai-anchor",
+      "commits": {
+        "4e66242fc4ef91698345add74cb0e6ad1c5e401a": "锚定首次提交（244 文件）",
+        "5b34b04c17efc0357c73d47e1713c65f146b1c6f": "git 外部锚文档（README 第九章＋升级说明第二十四节）",
+        "828feeea364b326f758cda4cb76070980431123f": "接真外部锚：README 第九章改写＋升级说明补记"
+      },
+      "tags": {
+        "anchor-v3.2.6": {
+          "tag_object": "a73558d1dba3134c12b74b506346b274a0ff992e",
+          "commit": "4e66242fc4ef91698345add74cb0e6ad1c5e401a"
+        },
+        "anchor-v3.2.6-doc": {
+          "tag_object": "458535ade4482c15aa50be52246131131abe220d",
+          "commit": "5b34b04c17efc0357c73d47e1713c65f146b1c6f"
+        }
+      },
+      "data_hashes": {
+        "prereg/PR-20261122-001.json (sha256, 回溯·已结算命中)": "dfd8d1959dda979efb1e1af8cf77054601a6816f3fdfd86efab2f1c04c97ff05",
+        "prereg/PR-20261122-002.json (sha256, 前瞻·待结算)": "29390ebcb1886fd5ce4281600e9235f7dc00e533ca7f7b1c3a299d2f1c60f2a2",
+        "prereg/settlements.index 的 sum 字段": "51044495b64ff954cd9db1ba9d883974e16cba4764b305965844916379d67fe6",
+        "引用未随包清单.md 的 md5": "262d7728c712981eeecdfafaf731171d"
+      }
+    }
+  ]
+}
