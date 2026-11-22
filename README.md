@@ -26,6 +26,19 @@ git ls-remote https://github.com/Liu5201988/huicheng-skillguard.git | grep -E "m
 每打一个新锚点版本，向 `anchors.json` 追加一条 entry 后正常 commit＋push（追加是快进推送，
 不受保护影响）。禁止改写历史条目——本分支禁强推，改写会直接被拒。
 
+## 灾难恢复规程（2026-11-22 演练后补入）
+
+实测：从 GitHub 克隆 `mangpai-anchor` 可恢复 244 文件、HEAD 与锚点一致（浅克隆即可），
+但克隆内 `run_all.py --gate` 首跑 18/21（check_refs/refs_md_fresh/run_tools_test 未过）——
+清单与引用校验含环境相关状态，**恢复后不是开箱全绿**。标准恢复序列：
+
+1. `git clone`（浅克隆可，做取证核验时用完整克隆＋比对 tag 对象）；
+2. `python tools/run_all.py --refresh` 重生成清单；
+3. `python tools/run_all.py --gate` 复跑须 21/21；
+4. **向本账本追加新 entry**：记录恢复后清单 md5 与全部 data_hashes 现算值（禁抄旧值——
+   v3.2.6 entry 曾因抄旧值致指针失效，v3.2.6-r2 已修正并实练本流程）；
+5. 在恢复副本上重打 commit＋tag，推送 `mangpai-anchor`。
+
 ## 条目
 
-见 `anchors.json`。当前 1 条：v3.2.6。
+见 `anchors.json`。当前 2 条：v3.2.6、v3.2.6-r2（修正 PR 哈希，append-only）。
