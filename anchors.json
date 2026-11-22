@@ -28,6 +28,24 @@
         "prereg/settlements.index 的 sum 字段": "51044495b64ff954cd9db1ba9d883974e16cba4764b305965844916379d67fe6",
         "引用未随包清单.md 的 md5": "262d7728c712981eeecdfafaf731171d"
       }
+    },
+    {
+      "version": "3.2.6-r2",
+      "package": "小天机盲派（盲派定层次技能包）",
+      "source_repo": "Liu5201988/huicheng-skillguard",
+      "source_branch": "mangpai-anchor",
+      "commits": {
+        "353319670bef488a80f99b9d0bab5df054254500": "公开账本仓库：强推的最后闸门（当前 HEAD，与 mangpai-anchor/mirror 三方一致，2026-11-22 实测）"
+      },
+      "tags": {},
+      "data_hashes": {
+        "prereg/PR-20261122-001.json (sha256, 回溯·已结算命中)": "5e692cb019b46fe568b25611cf884da03172762b077842b09a1c5ded86d72e7e",
+        "prereg/PR-20261122-002.json (sha256, 前瞻·待结算)": "d607f0b10f8d9219cc15f6afb76b5357230fdcd272be259609c5893fce19ed6e",
+        "prereg/settlements.json (sha256, 结算记录全文)": "50a549c1f56cef1b4b01f2f4264ee5d94973555b6895976ba52383da6ff18387",
+        "prereg/settlements.index 的 sum 字段": "51044495b64ff954cd9db1ba9d883974e16cba4764b305965844916379d67fe6",
+        "引用未随包清单.md 的 md5": "262d7728c712981eeecdfafaf731171d"
+      },
+      "note": "修正 entry：v3.2.6 entry 的 PR 两文件 sha256 系登记时误抄 --rehash/schema 升级前的旧值（dfd8d195/29390ebc）；git 侧 4e66242/3533196/工作区三方实测一致（5e692cb0/d607f0b0），文件未被篡改，属良性笔误。本 entry 以 2026-11-22 现算值取代，旧 entry 保留不删（append-only）。结算 index sum 与清单 md5 经复核一致。"
     }
   ]
 }
